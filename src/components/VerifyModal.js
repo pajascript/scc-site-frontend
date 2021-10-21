@@ -88,7 +88,7 @@ const VerifyModal = ({ showVerifyModal, setShowVerifyModal, setIsVerified }) => 
 
     const handleClick = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/enrollment/verify', code)
+        axios.post('https://stclarecollege.herokuapp.com/enrollment/verify', code)
             .then((res) => {
                 console.log(res.data);
                 setError(null);
