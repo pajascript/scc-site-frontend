@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 2rem;
+  font-weight: 900;
+  justify-self: flex-end;
+}
+
+.item {
+  width: 400px;
+  height: 400px;
+  background: yellow;
+  position: absolute;
+}
