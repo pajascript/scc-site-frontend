@@ -39,4 +39,5 @@ export const ErrorMessage = styled.p`
     color: #d10833;
     text-align: center;
     margin-top: 10px;
+    font-size: 1.3rem;
 `;
