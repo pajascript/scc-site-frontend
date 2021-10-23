@@ -39,7 +39,7 @@ const EnrollmentPage = ({isVerified, setIsVerified}) => {
     //Functions
     const onSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://stclarecollege.herokuapp.com/enrollment', studentDetails)
+        axios.post('https://stclarecollege.herokuapp.com/enrollment', studentDetails)
             .then((res) => {
                 console.log(res)
                 setShowVerifyModal(true)
