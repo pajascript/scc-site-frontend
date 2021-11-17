@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { CircularProgress } from "@material-ui/core";
 
 export const EnrollmentContainer = styled.section`
     width: 100%;
@@ -33,6 +34,7 @@ export const EnrollmentForm = styled.form`
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    overflow: hidden;
 `;
 
 export const ErrorMessage = styled.p`
@@ -40,4 +42,9 @@ export const ErrorMessage = styled.p`
     text-align: center;
     margin-top: 10px;
     font-size: 1.3rem;
+`;
+
+export const Spinner = styled(CircularProgress)`
+    align-self: center;
+    margin: 10px 0;
 `;

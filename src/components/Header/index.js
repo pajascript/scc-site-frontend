@@ -36,7 +36,7 @@ const Header = ({ toggle }) => {
     return (
             <HeaderContainer navShadow={navShadow} >
                     <NavWrapper>
-                        <NavLogo>
+                        <NavLogo to='/' >
                             <LogoImg src={LogoImage} alt="SCC Logo" />
                         </NavLogo>
 
@@ -44,7 +44,6 @@ const Header = ({ toggle }) => {
                             <NavItems to='/' >Home</NavItems>
                             <NavItems>About Us</NavItems>
                             <NavItems>News</NavItems>
-                            <NavItems>Management Systems<MdArrowDropDown /></NavItems>
                         </NavMenu>
 
                         <NavBtns>

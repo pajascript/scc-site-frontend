@@ -23,7 +23,7 @@ export const NavWrapper = styled.nav`
     padding: 0 10px;
 `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(Link)`
     width: 55px;
     height: 55px;
     display: flex;
@@ -32,6 +32,7 @@ export const NavLogo = styled.div`
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    text-decoration: none;
 `;
 
 export const LogoImg = styled.img`

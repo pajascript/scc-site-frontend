@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CsContainer = styled.section`
     width: 100%;
     height: auto;
-    background: #e7cece;
+    background: #830033;
     padding: 90px 0;
 
     

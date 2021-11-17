@@ -3,7 +3,8 @@ import {EnrollmentContainer,
         EnrollmentWrapper,
         EnrollmentHeading,
         EnrollmentForm,
-        ErrorMessage
+        ErrorMessage,
+        Spinner
         } from "./EnrollmentElements";
 import VerifyModal from "../../components/VerifyModal";
 import { TextField, MenuItem } from "@material-ui/core";
@@ -35,19 +36,24 @@ const EnrollmentPage = ({isVerified, setIsVerified}) => {
     const [birthdate, setBirthdate] = useState(new Date());
     const [error, setError] = useState(null);
     const [showVerifyModal, setShowVerifyModal] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     //Functions
     const onSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://stclarecollege.herokuapp.com/enrollment', studentDetails)
+        setLoading(true);
+
+        axios.post('http://stclarecollege.herokuapp.com/enrollment', studentDetails)
             .then((res) => {
                 console.log(res)
+                setLoading(false)
                 setShowVerifyModal(true)
             })
             .catch(err => {
-                setError(err.response.data.message);
+                setError(err.response.data.message)
+                setLoading(false)
             })
-    }
+    };
 
     const handleBirthdateChange = (date) => {
         const actualDate = date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
@@ -108,9 +114,11 @@ const EnrollmentPage = ({isVerified, setIsVerified}) => {
                         </TextField>
                         
                         {error && (
-                                <ErrorMessage>{error}</ErrorMessage>
-                            )}
-
+                            <ErrorMessage>{error}</ErrorMessage>
+                        )}
+                        {loading && (
+                            <Spinner color="inherit" />
+                        )}
                         <ButtonComponent>Submit</ButtonComponent>
                     </EnrollmentForm>
                 </EnrollmentWrapper>
