@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const HeaderContainer = styled.header`
     width: 100%;
@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
     position: fixed;
     top: 0;
     transition: all 300ms ease-in-out;
-    box-shadow: ${({navShadow}) => (navShadow ? "0 0 4px #6b6b6b" : "0 0 2px #6b6b6b" )};
+    box-shadow: ${({navShadow}) => (navShadow ? "0 0 6px 1px #6b6b6b" : "0 0 2px #6b6b6b" )};
 `;
 
 export const NavWrapper = styled.nav`
@@ -49,7 +49,7 @@ export const NavMenu = styled.div`
     }
 `;
 
-export const NavItems = styled(Link)`
+export const NavItems = styled(NavLink)`
     text-decoration: none;
     color: #000;
     font-weight: 300;

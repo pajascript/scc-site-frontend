@@ -41,9 +41,9 @@ const Header = ({ toggle }) => {
                         </NavLogo>
 
                         <NavMenu>
-                            <NavItems to='/' >Home</NavItems>
-                            <NavItems>About Us</NavItems>
-                            <NavItems>News</NavItems>
+                            <NavItems to='/' activeStyle={{background: '#ddd'}} exact >Home</NavItems>
+                            <NavItems to='/' >News</NavItems>
+                            <NavItems to='/onesharedworld' activeStyle={{background: '#ddd'}} >One Shared World</NavItems>
                         </NavMenu>
 
                         <NavBtns>

@@ -31,7 +31,7 @@ const HeroSection = () => {
                 </Content>
                 <HeroImage src={HeroImg} alt="St. Clare College Cover" />
             </HeroWrapper>
-            <Wave src={wave} />
+            {/* <Wave src={wave} /> */}
         </HeroContainer>
     )
 };

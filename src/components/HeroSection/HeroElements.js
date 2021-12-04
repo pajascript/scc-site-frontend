@@ -132,7 +132,7 @@ export const HeroImage = styled.img`
     height: auto;
     border-radius: 20%;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: 20px;
     min-width: 250px;
     z-index: 1;

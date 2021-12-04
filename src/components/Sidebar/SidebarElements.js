@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
     width: 300px;
@@ -38,7 +38,7 @@ export const SidebarMenu = styled.div`
     flex-direction: column;
 `;
 
-export const SidebarItems = styled(Link)`
+export const SidebarItems = styled(NavLink)`
     text-decoration: none;
     color: #000;
     font-weight: 400;

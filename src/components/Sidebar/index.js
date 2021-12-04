@@ -18,10 +18,9 @@ const Sidebar = ({ toggle, isOpen}) => {
             </CloseBtn>
 
             <SidebarMenu onClick={toggle} >
-                <SidebarItems to='/' >Home</SidebarItems>
-                <SidebarItems>About Us</SidebarItems>
-                <SidebarItems>News</SidebarItems>
-                <SidebarItems>Management Systems <MdArrowDropDown /></SidebarItems>
+                <SidebarItems to='/' activeStyle={{background: '#ddd'}} exact >Home</SidebarItems>
+                <SidebarItems to='/' >News</SidebarItems>
+                <SidebarItems to='/onesharedworld' activeStyle={{background: '#ddd'}} >One Shared World</SidebarItems>
             </SidebarMenu>
 
             <SidebarBtns onClick={toggle} >

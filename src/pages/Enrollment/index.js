@@ -43,7 +43,7 @@ const EnrollmentPage = ({isVerified, setIsVerified}) => {
         e.preventDefault();
         setLoading(true);
 
-        axios.post('https://stclarecollege.herokuapp.com/enrollment', studentDetails)
+        axios.post('http://localhost:5000/enrollment', studentDetails)
             .then((res) => {
                 console.log(res)
                 setLoading(false)

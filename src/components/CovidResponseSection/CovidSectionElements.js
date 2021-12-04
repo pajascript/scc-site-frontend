@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CsContainer = styled.section`
     width: 100%;
     height: auto;
-    background: #830033;
+    background: #eee;
     padding: 90px 0;
 
     
@@ -33,9 +33,9 @@ export const CsWrapper = styled.div`
 `;
 
 export const CsImage = styled.img`
-    width: 600px;
-    height: 500px;
-    margin-left: 40px;
+    width: 550px;
+    height: 450px;
+    margin-left: 20px;
 
     @media screen and (max-width: 980px) {
         width: 500px;
@@ -58,10 +58,10 @@ export const CsContent = styled.div`
     max-width: 600px;
     height: auto;
     padding: 2rem;
-    background: #e3c3c3;
-    margin-left: -80px;
+    background: #e7e7e7;
+    margin-left: -100px;
     z-index: 1;
-    opacity: 0.9;
+    opacity: 0.95;
     display: flex;
     flex-direction: column;
 
@@ -78,6 +78,7 @@ export const CsHeading = styled.h1`
     font-size: 1.8rem;
     color: #4b0002;
     font-weight: 600;
+    opacity: 1;
 
     @media screen and (max-width: 400px) {
         font-size: 1.6rem;
@@ -88,6 +89,7 @@ export const CsParagraph = styled.p`
     font-size: 1.2rem;
     color: #000;
     margin-top: 10px;
+    opacity: 1;
 
     @media screen and (max-width: 400px) {
         font-size: 1rem;

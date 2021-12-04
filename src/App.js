@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import EnrollmentPage from "./pages/Enrollment";
 import ConfirmationPage from "./pages/Confirmation";
 import LoginPage from "./pages/Login";
+import OSW from "./pages/OSW";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 
@@ -34,6 +35,10 @@ const App = () => {
 
           <Route path="/" exact  >
             <Home />
+          </Route>
+
+          <Route path="/onesharedworld" exact >
+            <OSW />
           </Route>
 
           <Route path="/enrollment" exact  >
