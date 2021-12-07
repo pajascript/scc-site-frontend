@@ -89,7 +89,11 @@ export const OSWButton = styled.a`
 export const OSWHeading = styled.h1`
     font-size: 2.6rem;
     color: #0d0d0d;
-    margin-top: 60px;
+    padding-top: 60px;
+
+    @media screen and (max-width: 710px) {
+        font-size: 2rem;
+    }
 `;
 
 export const OSWSubheading = styled.p`
@@ -125,6 +129,10 @@ export const Article = styled.p`
     margin-top: 2rem;
     max-width: 1000px;
     margin-inline: auto;
+
+    @media screen and (max-width: 1000px) {
+        padding: 0 10px;
+    }
 `;
 
 export const ArrowRight = styled(FiArrowRightCircle)`
@@ -139,7 +147,7 @@ export const ArrowRight = styled(FiArrowRightCircle)`
 
 export const OSWContent = styled.div`
     width: 100%;
-    background: #fafafa;
+    background: #f2f2f2;
 `;
 
 export const OSWContentWrapper = styled.div`

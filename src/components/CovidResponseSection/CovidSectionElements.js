@@ -3,12 +3,11 @@ import styled from "styled-components";
 export const CsContainer = styled.section`
     width: 100%;
     height: auto;
-    background: #eee;
-    padding: 90px 0;
+    background: #efe26c;
+    padding: 90px 10px;
 
-    
-    @media screen and (max-width: 670px) {
-        padding: 180px 0 90px 0;
+    @media screen and (max-width: 426px) {
+        padding-bottom: 40px;
     }
 `;
 
@@ -58,7 +57,8 @@ export const CsContent = styled.div`
     max-width: 600px;
     height: auto;
     padding: 2rem;
-    background: #e7e7e7;
+    /* background: #e7e7e7; */
+    background: #efe26c;
     margin-left: -100px;
     z-index: 1;
     opacity: 0.95;
