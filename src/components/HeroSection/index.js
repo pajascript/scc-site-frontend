@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {HeroContainer,
         HeroWrapper,
         Content,
@@ -14,13 +14,20 @@ import {HeroContainer,
 import HeroImg from "../../images/HeroImg.jpg";
 import wave from "../../images/wave.svg";
 import{ BsArrowRight }  from "react-icons/bs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const HeroSection = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1500 })
+    }, []);
+
     return (
         <HeroContainer>
             <HeroWrapper>
-                <Content>
-                    <TextContent>
+                <Content data-aos="fade-right" >
+                    <TextContent >
                         <HeroH1>The Leading Edge in Online Education System</HeroH1>
                         <HeroSubheading>Quality Education that Ensures Brighter Future</HeroSubheading>
                     </TextContent>
@@ -29,7 +36,7 @@ const HeroSection = () => {
                         <ExploreBtn>Explore  <BsArrowRight className="arrow" /></ExploreBtn>
                     </HeroBtns>
                 </Content>
-                <HeroImage src={HeroImg} alt="St. Clare College Cover" />
+                <HeroImage src={HeroImg} alt="St. Clare College Cover" data-aos="fade-down" />
             </HeroWrapper>
             <Wave src={wave} />
         </HeroContainer>
