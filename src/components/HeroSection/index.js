@@ -26,7 +26,7 @@ const HeroSection = () => {
     return (
         <HeroContainer>
             <HeroWrapper>
-                <Content data-aos="fade-right" >
+                <Content data-aos="fade-right" data-aos-once="true" >
                     <TextContent >
                         <HeroH1>The Leading Edge in Online Education System</HeroH1>
                         <HeroSubheading>Quality Education that Ensures Brighter Future</HeroSubheading>
@@ -36,7 +36,7 @@ const HeroSection = () => {
                         <ExploreBtn>Explore  <BsArrowRight className="arrow" /></ExploreBtn>
                     </HeroBtns>
                 </Content>
-                <HeroImage src={HeroImg} alt="St. Clare College Cover" data-aos="fade-down" />
+                <HeroImage src={HeroImg} alt="St. Clare College Cover" data-aos="fade-down" data-aos-offset="-120" data-aos-once="true" />
             </HeroWrapper>
             <Wave src={wave} />
         </HeroContainer>

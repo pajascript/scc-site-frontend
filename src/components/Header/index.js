@@ -42,7 +42,7 @@ const Header = ({ toggle }) => {
 
                         <NavMenu>
                             <NavItems to='/' activeStyle={{background: '#ddd'}} exact >Home</NavItems>
-                            <NavItems to='/' >News</NavItems>
+                            <NavItems to='/news' >News</NavItems>
                             <NavItems to='/onesharedworld' activeStyle={{background: '#ddd'}} >One Shared World</NavItems>
                         </NavMenu>
 

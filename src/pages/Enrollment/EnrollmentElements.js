@@ -35,6 +35,10 @@ export const EnrollmentForm = styled.form`
     flex-direction: column;
     max-width: 500px;
     overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
 `;
 
 export const ErrorMessage = styled.p`

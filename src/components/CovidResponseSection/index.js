@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 const CovidResponseSection = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 500 });
     }, []);
 
     return (

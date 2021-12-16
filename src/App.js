@@ -7,6 +7,7 @@ import EnrollmentPage from "./pages/Enrollment";
 import ConfirmationPage from "./pages/Confirmation";
 import LoginPage from "./pages/Login";
 import OSW from "./pages/OSW";
+import News from "./pages/News";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 
@@ -35,6 +36,10 @@ const App = () => {
 
           <Route path="/" exact  >
             <Home />
+          </Route>
+
+          <Route path="/news" exact  >
+            <News />
           </Route>
 
           <Route path="/onesharedworld" exact >
